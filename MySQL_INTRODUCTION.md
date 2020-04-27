@@ -103,7 +103,7 @@ Note:
 
 ## MySQL commands
 
-###Show the users
+### Show the users
 
 ```
 mysql> SELECT user FROM mysql.user;
@@ -117,19 +117,19 @@ mysql> SELECT user, host FROM mysql.user;
 
 
 
-###Create a database
+### Create a database
 
 ```
 mysql> CREATE database_name;
 ```
 
-###Delete a database
+### Delete a database
 
 ```
 mysql> DROP DATABASE database_name;
 ```
 
-###Select a database
+### Select a database
 
 We need to select the database in which we want to work.
 
@@ -137,7 +137,7 @@ We need to select the database in which we want to work.
 mysql> USE database_name;
 ```
 
-###Create a table
+### Create a table
 
 ```
 mysql> CREATE TABLE table_name(column_name
@@ -163,7 +163,7 @@ Note:
 
 * You can learn more about the datatypes in the official documentation of [MySQL](https://dev.mysql.com/doc/refman/5.6/en/data-types.html).
 
-###Rename table
+### Rename table
 
 ```
 mysql> ALTER TABLE table_name RENAME new_name;
@@ -179,7 +179,7 @@ mysql> RENAME TABLE table_name TO new_name,
 					table_name TO new_name,
 					table_name TO new_name;
 ```
-###Insert data into the table
+### Insert data into the table
 
 We have different options to insert data into our table.
 
@@ -312,7 +312,7 @@ waltervives$ touch filename.sql
 
 
 
-###Show the content of a table
+### Show the content of a table
 
 ```
 mysql> SELECT * FROM table_name;
@@ -369,7 +369,7 @@ output:
 
 
 
-###ORDER BY
+### ORDER BY
 
 ```
 mysql> SELECT * FROM table_name ORDER BY ASC/DESC;
@@ -408,7 +408,7 @@ output:
 
 
 
-###WHERE
+### WHERE
 
 The **where** statement It's useful to find certain information.
 
@@ -533,7 +533,7 @@ output:
 
 
 
-###Show the tables of the database
+### Show the tables of the database
 
 ```
 mysql> SHOW TABLES;
@@ -554,7 +554,7 @@ mysql> SHOW TABLES FROM database_name;
 mysql> SHOW FULL TABLES FROM database_name;
 ```
 
-###Show the total of rows in each table from a database
+### Show the total of rows in each table from a database
 
 ```
 mysql> SELECT table_name, table_rows FROM 
@@ -571,7 +571,7 @@ output:
 |table_name2  |	x	  |
 |table_name3  |	x	  |
 
-###Show the total of tables of each database
+### Show the total of tables of each database
 
 ```
 mysql> SELECT table_schema, COUNT(table_schema) FROM 
